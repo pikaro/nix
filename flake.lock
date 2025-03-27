@@ -1,0 +1,161 @@
+{
+  "nodes": {
+    "dotbin": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743159202,
+        "narHash": "sha256-01l43dKuW26EsIqpyELcyCE51o0bhG6rBzzzeoltpgk=",
+        "owner": "pikaro",
+        "repo": "dotbin",
+        "rev": "3ed30ba0877e0c1ac01d9dacbd264494c023ca63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pikaro",
+        "ref": "master",
+        "repo": "dotbin",
+        "type": "github"
+      }
+    },
+    "dotconf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743976091,
+        "narHash": "sha256-e3+TAiNtd4NlDY1pxRwvGgfJSrBewc24eyCUxXASVcs=",
+        "owner": "pikaro",
+        "repo": "dotconf",
+        "rev": "f48e085da259e97f3180435e77d29c4cd5240786",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pikaro",
+        "ref": "master",
+        "repo": "dotconf",
+        "type": "github"
+      }
+    },
+    "dotinc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743578597,
+        "narHash": "sha256-IQEZnVu/ktKrDHY13CcFw3liLAq7wVh9TdeuMLsHdlU=",
+        "owner": "pikaro",
+        "repo": "dotinc",
+        "rev": "5e62e36925081f80f403a73f0f7185fccdb3506b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pikaro",
+        "ref": "master",
+        "repo": "dotinc",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1743948087,
+        "narHash": "sha256-B6cIi2ScgVSROPPlTti6len+TdR0K25B9R3oKvbw3M8=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "ef3b2a6b602c3f1a80c6897d6de3ee62339a3eb7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "master",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "kitty": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743157933,
+        "narHash": "sha256-xDBBJsamQGgK03dWjxDVMny1V1j3sdzQwcs7CEzri70=",
+        "owner": "pikaro",
+        "repo": "kitty",
+        "rev": "fae59a07f3ab80308f997bce1f71263a7620c662",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pikaro",
+        "ref": "master",
+        "repo": "kitty",
+        "type": "github"
+      }
+    },
+    "nix-darwin": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1743496612,
+        "narHash": "sha256-emPWa5lmKbnyuj8c1mSJUkzJNT+iJoU9GMcXwjp2oVM=",
+        "owner": "LnL7",
+        "repo": "nix-darwin",
+        "rev": "73d59580d01e9b9f957ba749f336a272869c42dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LnL7",
+        "ref": "master",
+        "repo": "nix-darwin",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1743814133,
+        "narHash": "sha256-drDyYyUmjeYGiHmwB9eOPTQRjmrq3Yz26knwmMPLZFk=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "250b695f41e0e2f5afbf15c6b12480de1fe0001b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743624081,
+        "narHash": "sha256-XVsgUzdnbgAP0WXd4AzpeTghpUYicPMUA+NpDnxBJ+Y=",
+        "owner": "pikaro",
+        "repo": "nvim",
+        "rev": "0841f24d89eb251ba455368f3da7a58ab7213def",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pikaro",
+        "ref": "master",
+        "repo": "nvim",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dotbin": "dotbin",
+        "dotconf": "dotconf",
+        "dotinc": "dotinc",
+        "home-manager": "home-manager",
+        "kitty": "kitty",
+        "nix-darwin": "nix-darwin",
+        "nixpkgs": "nixpkgs",
+        "nvim": "nvim"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
