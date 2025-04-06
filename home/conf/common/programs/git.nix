@@ -8,7 +8,7 @@
     "cm" = "commit -m";
     "d" = "diff -w";
     "f" = "fetch";
-    "l" = "log --pretty=format:\"%C(yellow)%h\\\\ %ai%Cred%d\\\\ %C(brightwhite)%s%Cblue\\\\ [%cn]\" --decorate --date=short";
+    "l" = "log --pretty=format:\"%C(yellow)%h\\ %ai%Cred%d\\ %C(brightwhite)%s%Cblue\\ [%cn]\" --decorate --date=short";
     "lg" = "!git log --graph --oneline --decorate --all";
     "m" = "merge";
     "p" = "push";
