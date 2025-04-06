@@ -1,6 +1,7 @@
 {
   self,
   sysInfo,
+  utils,
   ...
 }: {
   config,
@@ -112,7 +113,15 @@
 
   system = {
     activationScripts = {
+      extraActivation = {
+        enable = true;
+        text = utils.formatList "osascript -e 'tell application \"System Events\" to make login item at end with properties {path:\"%s\", hidden:false}'" [
+          "/Applications/Nix Apps/UnnaturalScrollWheels.app"
+        ];
+      };
+
       postUserActivation = {
+        enable = true;
         text = "/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u";
       };
     };
