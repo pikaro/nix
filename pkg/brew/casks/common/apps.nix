@@ -1,3 +1,4 @@
 [
+  "joplin"
   "nuage"
 ]
