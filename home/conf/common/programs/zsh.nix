@@ -34,6 +34,8 @@
     bindkey '^[[B' history-search-forward
     bindkey '^Q' backward-kill-word
 
+    WORDCHARS="$${WORDCHARS/\//}"
+
     . ~/.local/include/entrypoint.sh;
   '';
 

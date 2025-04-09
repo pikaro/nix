@@ -27,6 +27,11 @@
       url = "github:pikaro/dotinc/master";
       flake = false;
     };
+    keyboard = {
+      url = "https://sourceforge.net/projects/uscustom/files/uscustom.2012-08-30.zip/download";
+      type = "tarball";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {

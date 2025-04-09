@@ -22,6 +22,8 @@
       ".local/gitbin".source = "${inputs.dotbin}";
       ".local/include".source = "${inputs.dotinc}";
       ".inputrc".source = "${inputs.dotconf}/.inputrc";
+      "Library/Keyboard Layouts/USCustom.keylayout".source = "${inputs.keyboard}/USCustom.keylayout";
+      "Library/Keyboard Layouts/USCustom.icns".source = "${inputs.keyboard}/USCustom.icns";
     };
   };
 
