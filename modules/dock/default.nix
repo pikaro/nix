@@ -23,7 +23,22 @@ in {
         type = with types;
           listOf (submodule {
             options = {
-              path = lib.mkOption {type = str;};
+              type = lib.mkOption {
+                type = str;
+                default = "app";
+              };
+              path = lib.mkOption {
+                type = str;
+                default = "";
+              };
+              view = lib.mkOption {
+                type = str;
+                default = "auto";
+              };
+              display = lib.mkOption {
+                type = str;
+                default = "folder";
+              };
               section = lib.mkOption {
                 type = str;
                 default = "apps";
@@ -60,7 +75,14 @@ in {
           cfg.entries;
         createEntries =
           concatMapStrings
-          (entry: "${dockutil}/bin/dockutil --no-restart --add '${entry.path}' --section ${entry.section} ${entry.options}\n")
+          (
+            entry:
+              if hasSuffix "spacer" entry.type
+              then "${dockutil}/bin/dockutil --no-restart --add '' --type ${entry.type} --section ${entry.section}\n"
+              else if entry.type == "folder"
+              then "${dockutil}/bin/dockutil --no-restart --add '${entry.path}' --view ${entry.view} --display ${entry.display}\n"
+              else "${dockutil}/bin/dockutil --no-restart --add '${entry.path}' --section ${entry.section} ${entry.options}\n"
+          )
           cfg.entries;
       in {
         system.activationScripts.postUserActivation.text = ''
@@ -70,7 +92,7 @@ in {
             echo >&2 "Resetting Dock."
             ${dockutil}/bin/dockutil --no-restart --remove all
             ${createEntries}
-            killall Dock || echo "No Dock process found"
+            killall Dock
           else
             echo >&2 "Dock setup complete."
           fi

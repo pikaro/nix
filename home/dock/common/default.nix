@@ -4,4 +4,5 @@
   {path = "/System/Applications/Notes.app";}
   {path = "/Applications/Firefox.app";}
   {path = "/Applications/Nix Apps/kitty.app";}
+  {spacer = "";}
 ]
