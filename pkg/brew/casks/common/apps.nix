@@ -1,4 +1,5 @@
 [
   "joplin"
+  "kitty"
   "nuage"
 ]

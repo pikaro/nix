@@ -163,7 +163,7 @@
         autohide = false;
         magnification = false;
         minimize-to-application = true;
-        show-recents = false;
+        show-recents = true;
       };
 
       NSGlobalDomain = {

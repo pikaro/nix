@@ -3,6 +3,9 @@
   {path = "/System/Applications/Calendar.app";}
   {path = "/System/Applications/Notes.app";}
   {path = "/Applications/Firefox.app";}
-  {path = "/Applications/Nix Apps/kitty.app";}
-  {spacer = "";}
+  {path = "/Applications/kitty.app";}
+  {type = "small-spacer";}
+  {path = "/Applications/Vikunja Desktop.app";}
+  {path = "/Applications/Joplin.app";}
+  {type = "small-spacer";}
 ]
