@@ -75,12 +75,13 @@
     "keyboard": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-nvZRN7cWAXEzwQ/gsYu/0PCHD1b0tpNiLxXHIEGicrk=",
-        "type": "file",
+        "lastModified": 1346320974,
+        "narHash": "sha256-YUuHcPjVralJaXMXuO8XTsypWnRf5Zb/6KaJ9U3n9eY=",
+        "type": "tarball",
         "url": "https://sourceforge.net/projects/uscustom/files/uscustom.2012-08-30.zip/download"
       },
       "original": {
-        "type": "file",
+        "type": "tarball",
         "url": "https://sourceforge.net/projects/uscustom/files/uscustom.2012-08-30.zip/download"
       }
     },
