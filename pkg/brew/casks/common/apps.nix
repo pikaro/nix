@@ -2,4 +2,5 @@
   "joplin"
   "kitty"
   "nuage"
+  "openmtp"
 ]
