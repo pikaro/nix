@@ -77,6 +77,7 @@
       "tf" = "terraform";
       "vim" = "nvim";
       "vim-dev" = "XDG_CONFIG_HOME=~/src/dre/dotfiles/ XDG_DATA_HOME=~/src/dre/dotfiles/nvim/local nvim -u ~/src/dre/dotfiles/nvim/init.lua";
+      "venv" = "source ~/.local/gitbin/_venv";
     };
     shells = [pkgs.bashInteractive pkgs.zsh];
   };
