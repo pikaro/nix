@@ -8,6 +8,7 @@ with pkgs; [
   jq
   ripgrep
   starship
+  tenv
   wget
   yarn
   yq-go
