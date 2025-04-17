@@ -1,4 +1,5 @@
 [
+  "discord"
   "joplin"
   "localsend"
   "kitty"
