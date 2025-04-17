@@ -16,15 +16,7 @@
       fv = "source $HOME/.local/gitbin/_fv";
     };
 
-    file = {
-      ".config/kitty".source = "${inputs.kitty}";
-      ".config/nvim".source = "${inputs.nvim}";
-      ".local/gitbin".source = "${inputs.dotbin}";
-      ".local/include".source = "${inputs.dotinc}";
-      ".inputrc".source = "${inputs.dotconf}/.inputrc";
-      "Library/Keyboard Layouts/USCustom.keylayout".source = "${inputs.keyboard}/USCustom.keylayout";
-      "Library/Keyboard Layouts/USCustom.icns".source = "${inputs.keyboard}/USCustom.icns";
-    };
+    file = utils.imp.importDir ./files {inherit inputs;};
   };
 
   xdg = {
@@ -38,5 +30,5 @@
     };
   };
 
-  programs = utils.dirToAttrs ./programs context;
+  programs = utils.imp.dirToAttrs ./programs context;
 }

@@ -4,4 +4,6 @@
   "kitty"
   "nuage"
   "openmtp"
+  "slack"
+  "spotify"
 ]

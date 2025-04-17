@@ -43,22 +43,22 @@
   }: let
     systems = import ./systems.nix;
     mkDarwinSystem = hostname: sysInfo: let
-      utils = import ./lib/utils.nix {
+      utils = import ./lib {
         inherit (nixpkgs) lib;
         inherit hostname;
       };
 
       context = {
         inherit self inputs utils;
-        sysInfo = utils.sysInfo;
+        sysInfo = utils.base.sysInfo;
         lib = nixpkgs.lib;
       };
-      confModules = map (path: import path context) (utils.getImports ./conf);
+      confModules = map (path: import path context) (utils.imp.getImports ./conf);
       pkgModules = [(import ./pkg context)];
       homeModules = import ./home context;
     in
       nix-darwin.lib.darwinSystem {
-        system = utils.sysInfo.platform;
+        system = utils.base.sysInfo.platform;
         modules = confModules ++ pkgModules ++ homeModules;
       };
   in {

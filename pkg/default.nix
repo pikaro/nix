@@ -3,17 +3,21 @@
   utils,
   ...
 }: {pkgs, ...}: {
-  environment.systemPackages = lib.concatMap (file: import file {inherit pkgs;}) (utils.getImports' ./nix);
+  environment.systemPackages = lib.concatMap (file: import file {inherit pkgs;}) (utils.imp.getImports' ./nix);
 
-  homebrew = {
+  homebrew = let
+    casks = lib.concatMap (path: import path) (utils.imp.getImports' ./brew/casks);
+    brews = lib.concatMap (path: import path) (utils.imp.getImports' ./brew/brews);
+    masApps = utils.imp.doImports' ./appstore {};
+  in {
     enable = true;
     onActivation = {
       autoUpdate = true;
       cleanup = "zap";
       upgrade = true;
     };
-    casks = lib.concatMap (path: import path) (utils.getImports' ./brew/casks);
-    brews = lib.concatMap (path: import path) (utils.getImports' ./brew/brews);
-    masApps = lib.foldl lib.recursiveUpdate {} (map (path: import path) (utils.getImports' ./appstore));
+    casks = casks;
+    brews = brews;
+    masApps = masApps;
   };
 }
