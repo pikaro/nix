@@ -1,6 +1,5 @@
 {
   sysInfo,
-  inputs,
   utils,
   ...
 } @ context: {
@@ -16,7 +15,8 @@
       fv = "source $HOME/.local/gitbin/_fv";
     };
 
-    file = utils.imp.importDir ./files {inherit inputs;};
+    # FIXME: How to COPY files which MacOS requires to be physical files instead of symlinks?
+    file = utils.imp.importDir ./files context;
   };
 
   xdg = {

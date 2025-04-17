@@ -1,4 +1,4 @@
-{inputs}: {
+{inputs, ...}: {
   ".config/kitty".source = "${inputs.kitty}";
   ".config/nvim".source = "${inputs.nvim}";
   ".local/gitbin".source = "${inputs.dotbin}";

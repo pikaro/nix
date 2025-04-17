@@ -7,6 +7,7 @@ with pkgs; [
   gitflow
   jq
   ripgrep
+  rsync
   starship
   tenv
   wget
