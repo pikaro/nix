@@ -3,7 +3,7 @@ with pkgs; [
   alejandra
   gofumpt
   mdformat
-  python312Packages.mdformat-gfm
+  python313Packages.mdformat-gfm
   ruff
   stylua
   shfmt
