@@ -14,7 +14,10 @@
       useGlobalPkgs = true;
       useUserPackages = true;
       extraSpecialArgs = builtins.removeAttrs context ["lib"];
-      users.${sysInfo.user}.imports = utils.imp.getImports ./conf;
+      users.${sysInfo.user} = {
+        imports = utils.imp.getImports ./conf;
+        home.sessionVariables = utils.imp.doImports' ./vars {};
+      };
     };
 
     local = {
