@@ -1,5 +1,6 @@
 {pkgs}:
 with pkgs; [
+  awscli2
   coreutils
   curl
   gnused
