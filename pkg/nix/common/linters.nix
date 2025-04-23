@@ -1,6 +1,7 @@
 {pkgs}:
 with pkgs; [
-  ansible-lint
+  # FIXME: https://github.com/NixOS/nixpkgs/issues/400373
+  #ansible-lint
   hadolint
   shellcheck
   yamllint
