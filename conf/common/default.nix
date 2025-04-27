@@ -130,6 +130,7 @@
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToEscape = true;
+      swapLeftCtrlAndFn = true;
     };
 
     defaults = {
