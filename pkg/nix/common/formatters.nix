@@ -2,8 +2,8 @@
 with pkgs; [
   alejandra
   gofumpt
-  mdformat
-  python313Packages.mdformat-gfm
+  (python3.withPackages
+    (ps: with ps; [mdformat mdformat-gfm]))
   ruff
   stylua
   shfmt
