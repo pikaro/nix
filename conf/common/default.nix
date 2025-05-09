@@ -130,7 +130,13 @@
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToEscape = true;
-      swapLeftCtrlAndFn = true;
+      userKeyMapping = [
+        {
+          # Map fn -> Control
+          HIDKeyboardModifierMappingSrc = 1095216660483;
+          HIDKeyboardModifierMappingDst = 30064771296;
+        }
+      ];
     };
 
     defaults = {
