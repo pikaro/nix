@@ -74,6 +74,9 @@
       "ls" = "ls --color=auto";
       "la" = "ls -A --color=yes";
       "ll" = "ls -lAh --color=yes";
+      "pci" = "pre-commit install --install-hooks";
+      "pcr" = "pre-commit run --all-files --verbose";
+      "pcu" = "pre-commit autoupdate";
       "tf" = "terraform";
       "vim" = "nvim";
       "vim-dev" = "XDG_CONFIG_HOME=~/src/dre/dotfiles/ XDG_DATA_HOME=~/src/dre/dotfiles/nvim/local nvim -u ~/src/dre/dotfiles/nvim/init.lua";
