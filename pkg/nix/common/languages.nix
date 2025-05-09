@@ -4,6 +4,12 @@ with pkgs; [
   go
   nodejs
   poetry
-  python313Full
+  (python313.withPackages
+    (ps:
+      with ps; [
+        mdformat
+        mdformat-gfm
+        tabulate
+      ]))
   rustc
 ]

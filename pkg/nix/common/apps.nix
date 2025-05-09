@@ -4,5 +4,4 @@ with pkgs; [
   # FIXME: Only creates link, messes with Dock, how to fix?
   #kitty
   neovim
-  unnaturalscrollwheels
 ]

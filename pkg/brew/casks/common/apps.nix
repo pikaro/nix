@@ -1,5 +1,6 @@
 [
   "discord"
+  "docker"
   "joplin"
   "localsend"
   "kitty"
@@ -7,4 +8,5 @@
   "openmtp"
   "slack"
   "spotify"
+  "unnaturalscrollwheels"
 ]

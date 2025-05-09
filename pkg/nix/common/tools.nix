@@ -3,6 +3,7 @@ with pkgs; [
   coreutils
   curl
   gnused
+  gnugrep
   git
   gitflow
   jq
@@ -11,7 +12,9 @@ with pkgs; [
   rsync
   starship
   tenv
+  terraform-docs
   trivy
+  weechat
   wget
   yarn
   yq-go

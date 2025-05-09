@@ -117,7 +117,7 @@
       extraActivation = {
         enable = true;
         text = utils.misc.formatList "osascript -e 'tell application \"System Events\" to make login item at end with properties {path:\"%s\", hidden:false}'" [
-          "/Applications/Nix Apps/UnnaturalScrollWheels.app"
+          "/Applications/UnnaturalScrollWheels.app"
         ];
       };
 
