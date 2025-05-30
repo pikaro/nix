@@ -1,7 +1,7 @@
 {
   "dre-mba" = {
     platform = "aarch64-darwin";
-    profile = "personal";
+    profile = "home";
     user = "david.reis";
     userName = "David Reis";
   };

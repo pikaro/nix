@@ -20,10 +20,12 @@
       };
     };
 
-    local = {
+    local = let
+      entries = lib.concatMap (path: import path) (utils.imp.getImports ./dock);
+    in {
       dock = {
         enable = true;
-        entries = lib.concatMap (path: import path) (utils.imp.getImports ./dock);
+        entries = entries;
       };
     };
   }
