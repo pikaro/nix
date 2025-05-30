@@ -8,8 +8,10 @@ with pkgs; [
   (python313.withPackages
     (ps:
       with ps; [
+        datamodel-code-generator
         mdformat
         mdformat-gfm
+        pip
         tabulate
       ]))
   rustc
