@@ -2,10 +2,12 @@
 with pkgs; [
   coreutils
   curl
+  fswatch
   gnused
   gnugrep
   git
   gitflow
+  graphviz
   jq
   pre-commit
   ripgrep
