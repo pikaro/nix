@@ -5,7 +5,10 @@
     "aa" = "add .";
     "b" = "!git for-each-ref --color=always --sort='-committerdate:iso8601' --format=' %(color:brightblack)%(committerdate:iso8601)%09%(committerdate:relative)%09%(color:blue)[%(authorname)]%09%(if:equals=master)%(refname:short)%(then)%(color:red)%(else)%(if:equals=development)%(refname:short)%(then)%(color:green)%(else)%(color:cyan)%(end)%(end)%(refname:short)%09%(color:reset)%(contents:subject)' refs/heads | column -ts$'\\t'";
     "c" = "checkout";
+    "ca" = "commit --amend";
+    "can" = "commit --amend --no-edit --no-verify";
     "cm" = "commit -m";
+    "cmn" = "commit --no-verify -m";
     "d" = "diff -w";
     "f" = "fetch";
     "l" = "log --pretty=format:\"%C(yellow)%h\\ %ai%Cred%d\\ %C(brightwhite)%s%Cblue\\ [%cn]\" --decorate --date=short";
