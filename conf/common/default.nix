@@ -85,6 +85,11 @@
       "vim" = "nvim";
       "vim-dev" = "XDG_CONFIG_HOME=~/src/dre/dotfiles/ XDG_DATA_HOME=~/src/dre/dotfiles/nvim/local nvim -u ~/src/dre/dotfiles/nvim/init.lua";
       "venv" = "source ~/.local/gitbin/_venv";
+      "tta" = "bin/tofu --local apply -refresh=false";
+      "ttr" = "bin/tofu --local refresh";
+      "ttg" = "bin/tofu --local get -update";
+      "tti" = "bin/tofu --local init -upgrade";
+      "ttp" = "bin/tofu --local plan -refresh=false";
     };
     shells = [pkgs.bashInteractive pkgs.zsh];
   };
