@@ -2,12 +2,21 @@
   enable = true;
   settings = {
     add_newline = true;
-    command_timeout = 1300;
+    command_timeout = 200;
     scan_timeout = 50;
-    format = "$all$nix_shell$nodejs$lua$golang$rust$php$git_branch$git_commit$git_state$git_status\n$username$hostname$directory";
+    format = "$all$character ";
     character = {
-      success_symbol = "[](bold green) ";
-      error_symbol = "[✗](bold red) ";
+      error_symbol = "[❯](bold red)";
+      success_symbol = "[❯](bold green)";
+      format = "$symbol$symbol$symbol";
+    };
+    terraform = {
+      symbol = " ";
+    };
+    directory = {
+      truncate_to_repo = false;
+      use_logical_path = false;
+      truncation_length = 255;
     };
   };
 }
