@@ -1,5 +1,6 @@
 [
   "signal"
+  "steam"
   "telegram"
   "whatsapp"
 ]
