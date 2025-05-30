@@ -1,4 +1,6 @@
-{lib, ...}: {
+{lib, ...}: rec {
   formatList = template: list:
-    lib.concatStringsSep "\n" (map (item: lib.replaceStrings ["%s"] [item] template) list);
+    map (item: lib.replaceStrings ["%s"] [item] template) list;
+  formatListJoin = template: list: sep:
+    lib.concatStringsSep sep (formatList template list);
 }

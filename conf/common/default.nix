@@ -2,14 +2,18 @@
   self,
   sysInfo,
   utils,
+  lib,
   ...
 }: {
   config,
   pkgs,
   ...
 }: {
-  system.configurationRevision = self.rev or self.dirtyRev or null;
-  system.stateVersion = 6;
+  system = {
+    configurationRevision = self.rev or self.dirtyRev or null;
+    stateVersion = 6;
+    primaryUser = sysInfo.user;
+  };
   nixpkgs.hostPlatform = sysInfo.platform;
 
   security.pam.services.sudo_local.touchIdAuth = true;
@@ -117,16 +121,23 @@
 
   system = {
     activationScripts = {
-      extraActivation = {
-        enable = true;
-        text = utils.misc.formatList "osascript -e 'tell application \"System Events\" to make login item at end with properties {path:\"%s\", hidden:false}'" [
+      extraActivation = let
+        loginTpl = "osascript -e 'tell application \"System Events\" to make login item at end with properties {path:\"%s\", hidden:false}'";
+        commands = [
+          "/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u"
+        ];
+        loginItems = [
           "/Applications/UnnaturalScrollWheels.app"
         ];
-      };
-
-      postUserActivation = {
+        loginItemCommands = utils.misc.formatList loginTpl loginItems;
+        activationCommands = loginItemCommands ++ commands;
+        activationCommand = lib.concatStringsSep "\n" activationCommands;
+        activationScript = pkgs.writeShellScript "activation-script" activationCommand;
+      in {
         enable = true;
-        text = "/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u";
+        text = ''
+          sudo -u '${sysInfo.user}' ${activationScript}
+        '';
       };
     };
 

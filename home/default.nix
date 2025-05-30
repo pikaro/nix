@@ -26,6 +26,7 @@
       dock = {
         enable = true;
         entries = entries;
+        user = sysInfo.user;
       };
     };
   }

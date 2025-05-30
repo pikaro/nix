@@ -16,6 +16,12 @@ in {
       example = false;
     };
 
+    local.dock.user = mkOption {
+      description = "User to run dockutil as";
+      type = with types; str;
+      example = "pikaro";
+    };
+
     local.dock.entries =
       mkOption
       {
@@ -84,8 +90,7 @@ in {
               else "${dockutil}/bin/dockutil --no-restart --add '${entry.path}' --section ${entry.section} ${entry.options}\n"
           )
           cfg.entries;
-      in {
-        system.activationScripts.postUserActivation.text = ''
+        dockScript = pkgs.writeShellScript "dock" ''
           set -eEuo pipefail
           haveURIs="$(${dockutil}/bin/dockutil --list | ${pkgs.coreutils}/bin/cut -f2)"
           if ! diff -wu <(echo -n "$haveURIs") <(echo -n '${wantURIs}') >&2 ; then
@@ -97,6 +102,10 @@ in {
           else
             echo >&2 "Dock already set up."
           fi
+        '';
+      in {
+        system.activationScripts.extraActivation.text = ''
+          sudo -u '${cfg.user}' ${dockScript}
         '';
       }
     );

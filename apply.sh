@@ -5,4 +5,4 @@ if [ "${1:-}" = "-u" ]; then
     shift
 fi
 git add flake.lock
-darwin-rebuild switch --flake . "$@"
+sudo darwin-rebuild switch --flake . "$@"
