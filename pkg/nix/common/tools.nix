@@ -8,6 +8,7 @@ with pkgs; [
   git
   gitflow
   graphviz
+  jd-diff-patch
   jq
   pre-commit
   ripgrep
