@@ -1,4 +1,5 @@
 [
+  "arduino-ide"
   "signal"
   "steam"
   "telegram"
