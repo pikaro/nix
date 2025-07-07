@@ -2,7 +2,7 @@
   "google-chrome"
   "google-chrome@canary"
   "discord"
-  "docker"
+  "docker-desktop"
   "firefox"
   "joplin"
   "localsend"
@@ -13,5 +13,5 @@
   "slack"
   "spotify"
   "unnaturalscrollwheels"
-  "wireshark"
+  "wireshark-app"
 ]
