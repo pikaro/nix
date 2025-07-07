@@ -1,5 +1,6 @@
 {pkgs}:
 with pkgs; [
+  colordiff
   coreutils
   curl
   fswatch
@@ -12,11 +13,14 @@ with pkgs; [
   jq
   pre-commit
   ripgrep
+  rlwrap
   rsync
+  sqlite
   starship
   tenv
   terraform-docs
   trivy
+  wdiff
   weechat
   wget
   yarn
