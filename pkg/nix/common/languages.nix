@@ -8,12 +8,14 @@ with pkgs; [
   (python313.withPackages
     (ps:
       with ps; [
+        awscli2
         # FIXME: BROKEN
         # datamodel-code-generator
         mdformat
         mdformat-gfm
         mdformat-mkdocs
         pip
+        pre-commit
         tabulate
       ]))
   rustc

@@ -14,7 +14,6 @@ with pkgs; [
   jq
   mermaid-cli
   plantuml
-  pre-commit
   ripgrep
   rlwrap
   rsync
