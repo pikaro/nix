@@ -9,8 +9,11 @@ with pkgs; [
   git
   gitflow
   graphviz
+  imagemagick
   jd-diff-patch
   jq
+  mermaid-cli
+  plantuml
   pre-commit
   ripgrep
   rlwrap
@@ -19,6 +22,7 @@ with pkgs; [
   starship
   tenv
   terraform-docs
+  tree-sitter
   trivy
   wdiff
   weechat

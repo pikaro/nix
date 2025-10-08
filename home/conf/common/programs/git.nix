@@ -38,6 +38,7 @@
   extraConfig = {
     init = {
       defaultBranch = "dev";
+      templateDir = "~/.git-template";
     };
     gitflow = {
       prefix = {

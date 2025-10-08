@@ -1,3 +1,3 @@
 [
-  "markdownlint-cli"
+  "markdownlint-cli2"
 ]

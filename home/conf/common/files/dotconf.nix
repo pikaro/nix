@@ -8,7 +8,7 @@
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";
   ".mdformat.toml".text = ''
     wrap=80
-    extensions=["gfm"]
+    extensions=["gfm", "mkdocs"]
   '';
 
   ".clang-format".text = ''
