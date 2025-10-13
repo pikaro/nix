@@ -1,9 +1,11 @@
 {pkgs}:
 with pkgs; [
+  baobab
   colordiff
   coreutils
   curl
   fswatch
+  gettext
   gnused
   gnugrep
   git

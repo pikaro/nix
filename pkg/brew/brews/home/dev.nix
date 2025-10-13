@@ -4,4 +4,5 @@
   "cmake"
   "ninja"
   "platformio"
+  "protoc-gen-js"
 ]

@@ -5,6 +5,7 @@ with pkgs; [
   nodejs
   pnpm
   poetry
+  python312
   (python313.withPackages
     (ps:
       with ps; [
@@ -17,4 +18,5 @@ with pkgs; [
         tabulate
       ]))
   rustc
+  uv
 ]

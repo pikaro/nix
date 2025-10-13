@@ -1,4 +1,5 @@
 [
+  "gimp"
   "google-chrome"
   "google-chrome@canary"
   "discord"
