@@ -6,3 +6,7 @@ if [ "${1:-}" = "-u" ]; then
 fi
 git add flake.lock
 sudo darwin-rebuild switch --flake . "$@"
+nix-env --delete-generations old
+nix-store gc --gc
+nix-collect-garbage -d
+nix-store --optimise
