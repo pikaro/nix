@@ -20,9 +20,9 @@ with pkgs; [
   sqlite
   starship
   tenv
+  terragrunt
   terraform-docs
   tree-sitter
-  trivy
   wdiff
   weechat
   wget
