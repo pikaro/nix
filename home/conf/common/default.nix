@@ -7,9 +7,7 @@
     stateVersion = "24.11";
     homeDirectory = "/Users/${sysInfo.user}";
     sessionPath = [
-      "$HOME/.bin"
-      "$HOME/.local/bin"
-      "$HOME/.local/gitbin"
+      # WARNING: Gets added BEFORE ~/.zprofile / ~/.zshrc
     ];
     shellAliases = {
       fv = "source $HOME/.local/gitbin/_fv";

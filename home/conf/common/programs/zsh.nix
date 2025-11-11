@@ -42,7 +42,14 @@
     bindkey '^[[3~' delete-char
     bindkey '^R' history-incremental-search-backward
 
-    . ~/.local/include/entrypoint.sh;
+    . ~/.local/shell-include/entrypoint.sh;
+  '';
+
+  envExtra = ''
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    export PATH="$HOME/.bin:$PATH"
+    export PATH="$HOME/.local/bin:$PATH"
+    export PATH="$HOME/.local/gitbin:$PATH"
   '';
 
   syntaxHighlighting = {
