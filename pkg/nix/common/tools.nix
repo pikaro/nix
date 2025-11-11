@@ -11,7 +11,6 @@ with pkgs; [
   sqlite
   starship
   tenv
-  terragrunt
   terraform-docs
   tree-sitter
   weechat
