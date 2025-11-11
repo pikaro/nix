@@ -97,6 +97,8 @@
   environment.variables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
+    PAGER = "bat";
+    BAT_PAGER = "nvimpager";
     LANG = "en_US.UTF-8";
   };
 

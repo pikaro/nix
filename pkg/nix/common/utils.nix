@@ -11,6 +11,7 @@ with pkgs; [
   jq
   ripgrep
   rsync
+  nvimpager
   wdiff
   wget
 ]
