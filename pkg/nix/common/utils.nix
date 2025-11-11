@@ -2,6 +2,8 @@
 with pkgs; [
   colordiff
   curl
+  dive
+  flock
   fswatch
   gettext
   gnused
@@ -9,6 +11,7 @@ with pkgs; [
   git
   gitflow
   jq
+  pstree
   ripgrep
   rsync
   nvimpager
