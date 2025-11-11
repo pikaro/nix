@@ -90,6 +90,7 @@
       "ttg" = "bin/tofu --local get -update";
       "tti" = "bin/tofu --local init -upgrade";
       "ttp" = "bin/tofu --local plan -refresh=false";
+      "zsh-plain" = "/usr/bin/env -i PATH=\"$HOME/.local/bin-plain:/usr/bin:/bin:/usr/sbin:/sbin\" USER=\"\$USER\" HOME=\"$HOME\" TERM=\"xterm\" /bin/zsh -df";
     };
     shells = [pkgs.bashInteractive pkgs.zsh];
   };
