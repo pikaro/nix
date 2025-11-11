@@ -2,7 +2,7 @@
   ".config/kitty".source = "${inputs.kitty}";
   ".config/nvim".source = "${inputs.nvim}";
   ".local/gitbin".source = "${inputs.dotbin}";
-  ".local/include".source = "${inputs.dotinc}";
+  ".local/shell-include".source = "${inputs.dotinc}";
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
 
   ".aider.model.settings.yml".text = ''
@@ -28,5 +28,27 @@
     ---
     BasedOnStyle: LLVM
     IndentWidth: 4
+    ColumnLimit: 80
+  '';
+
+  ".platformio/clangd".text = ''
+    CompileFlags:
+      Add:
+        - -w
+      Remove:
+        - -Wall
+        - -Wextra
+        - -Wshadow
+        - -Wshadow-field
+        - -fno-shrink-wrap
+        - -fno-tree-switch-conversion
+        - -fstrict-volatile-bitfields
+        - -mdisable-hardware-atomics
+    Diagnostics:
+      Suppress: ['.*']
+      UnusedIncludes: None
+      ClangTidy:
+        Remove:
+          - '*'
   '';
 }
