@@ -100,6 +100,9 @@
     PAGER = "bat";
     BAT_PAGER = "nvimpager";
     LANG = "en_US.UTF-8";
+    AWS_EC2_METADATA_DISABLED = "true";
+    DOCKER_CLI_EXPERIMENTAL = "1";
+    BUILDX_EXPERIMENTAL = "1";
   };
 
   fonts.packages = with pkgs; [
