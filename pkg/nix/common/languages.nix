@@ -6,7 +6,6 @@ with pkgs; [
   pnpm
   pkgconf
   poetry
-  python312
   (python313.withPackages
     (ps:
       with ps; [
