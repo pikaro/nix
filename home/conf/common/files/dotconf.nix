@@ -23,7 +23,7 @@
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";
   ".mdformat.toml".text = ''
     wrap=80
-    extensions=["gfm", "mkdocs"]
+    extensions=["gfm", "mkdocs", "frontmatter"]
   '';
 
   ".clang-format".text = ''
