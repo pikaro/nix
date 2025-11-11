@@ -4,6 +4,7 @@ with pkgs; [
   go
   nodejs
   pnpm
+  pkgconf
   poetry
   python312
   (python313.withPackages
@@ -19,4 +20,5 @@ with pkgs; [
       ]))
   rustc
   uv
+  yarn
 ]

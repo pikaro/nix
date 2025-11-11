@@ -1,33 +1,19 @@
 {pkgs}:
 with pkgs; [
   baobab
-  colordiff
   coreutils
-  curl
-  fswatch
-  gettext
-  gnused
-  gnugrep
-  git
-  gitflow
   graphviz
   imagemagick
   jd-diff-patch
-  jq
   mermaid-cli
   plantuml
-  ripgrep
   rlwrap
-  rsync
   sqlite
   starship
   tenv
   terragrunt
   terraform-docs
   tree-sitter
-  wdiff
   weechat
-  wget
-  yarn
   yq-go
 ]
