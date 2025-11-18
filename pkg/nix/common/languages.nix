@@ -10,7 +10,7 @@ with pkgs; [
     (ps:
       with ps; [
         boto3
-        GitPython
+        gitpython
         # FIXME: BROKEN
         # datamodel-code-generator
         mdformat

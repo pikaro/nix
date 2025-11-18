@@ -1,6 +1,7 @@
 {pkgs}:
 with pkgs; [
-  aider-chat
+  # FIXME: broken
+  # aider-chat
   dbeaver-bin
   # FIXME: Only creates link, messes with Dock, how to fix?
   #kitty
