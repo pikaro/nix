@@ -8,6 +8,7 @@ with pkgs; [
   marp-cli
   md2pdf
   mermaid-cli
+  nix-tree
   plantuml
   rlwrap
   sqlite
