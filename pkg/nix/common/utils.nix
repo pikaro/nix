@@ -16,7 +16,7 @@ with pkgs; [
   pstree
   ripgrep
   rsync
-  nvimpager
+  socat
   wdiff
   wget
 ]
