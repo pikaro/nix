@@ -2,6 +2,7 @@
 with pkgs; [
   colordiff
   curl
+  delta
   dive
   flock
   fswatch
@@ -11,6 +12,7 @@ with pkgs; [
   git
   gitflow
   jq
+  ov
   pstree
   ripgrep
   rsync

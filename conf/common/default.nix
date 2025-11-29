@@ -69,7 +69,7 @@
 
   environment = {
     shellAliases = {
-      "cat" = "bat --no-pager --theme=gruvbox-dark";
+      "cat" = "bat --no-pager --theme=gruvbox-dark --style=-numbers";
       "d" = "docker";
       "dc" = "docker-compose";
       "g" = "git";
@@ -99,7 +99,7 @@
     EDITOR = "nvim";
     VISUAL = "nvim";
     PAGER = "bat";
-    BAT_PAGER = "nvimpager";
+    BAT_PAGER = "ov -FH3";
     LANG = "en_US.UTF-8";
     AWS_EC2_METADATA_DISABLED = "true";
     DOCKER_CLI_EXPERIMENTAL = "1";

@@ -1,4 +1,5 @@
 {...}: {
-  enable = true;
-  enableGitIntegration = true;
+  # Use manual config
+  enable = false;
+  enableGitIntegration = false;
 }

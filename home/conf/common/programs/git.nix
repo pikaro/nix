@@ -1,6 +1,16 @@
 {sysInfo, ...}: {
   enable = true;
   settings = {
+    core = {
+      pager = "delta --pager='ov -F'";
+    };
+    pager = {
+      show = "delta --pager='ov -F --header 3'";
+    };
+    delta = {
+      navigate = true;
+      file-style = "yellow";
+    };
     alias = {
       "a" = "add";
       "aa" = "add .";

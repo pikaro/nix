@@ -5,8 +5,6 @@
   ".local/shell-include".source = "${inputs.dotinc}";
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
 
-  ".config/nvimpager".source = "${inputs.nvim}/init.pager.lua";
-
   ".aider.model.settings.yml".text = ''
     - name: aider/extra_params
       extra_params:
