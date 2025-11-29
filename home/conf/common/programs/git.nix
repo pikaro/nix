@@ -22,7 +22,7 @@
       "cmn" = "commit --no-verify -m";
       "d" = "diff -w";
       "f" = "fetch";
-      "l" = "log --pretty=format:\"%C(yellow)%h\\ %ai%Cred%d\\ %C(brightwhite)%s%Cblue\\ [%cn]\" --decorate --date=short";
+      "l" = "log --pretty=format:\"%C(red)%h %C(yellow)%as %C(white)[%C(blue)%an%C(white)] %C(brightwhite)%s %C(red)%d\" --decorate --date=short --reverse";
       "lg" = "!git log --graph --oneline --decorate --all";
       "m" = "merge";
       "p" = "push";
