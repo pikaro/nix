@@ -5,6 +5,8 @@ with pkgs; [
   graphviz
   imagemagick
   jd-diff-patch
+  marp-cli
+  md2pdf
   mermaid-cli
   plantuml
   rlwrap
