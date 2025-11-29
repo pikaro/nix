@@ -46,10 +46,16 @@
   '';
 
   envExtra = ''
+    PATH_ORIG="$PATH"
+    PATH_SYS="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    PATH_NIX="''${PATH_ORIG%''${PATH_SYS}}"
     eval "$(/opt/homebrew/bin/brew shellenv)"
-    export PATH="$HOME/.bin:$PATH"
-    export PATH="$HOME/.local/bin:$PATH"
-    export PATH="$HOME/.local/gitbin:$PATH"
+    PATH_BREW="''${PATH%''${PATH_ORIG}}"
+    PATH="$PATH_NIX$PATH_BREW:$PATH_SYS"
+    PATH="$HOME/.bin:$PATH"
+    PATH="$HOME/.local/bin:$PATH"
+    PATH="$HOME/.local/gitbin:$PATH"
+    export PATH
   '';
 
   syntaxHighlighting = {
