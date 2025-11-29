@@ -2,6 +2,7 @@
 with pkgs; [
   cargo
   go
+  gopls
   nodejs
   pnpm
   pkgconf
