@@ -11,7 +11,9 @@ with pkgs; [
   gnugrep
   git
   gitflow
+  kubernetes-helm
   jq
+  nmap
   ov
   pstree
   ripgrep

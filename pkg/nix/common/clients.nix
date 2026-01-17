@@ -5,4 +5,6 @@ with pkgs; [
   kubectl
   mariadb
   postgresql
+  talosctl
+  wireguard-tools
 ]
