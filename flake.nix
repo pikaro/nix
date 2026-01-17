@@ -15,6 +15,10 @@
       url = "github:pikaro/nvim/master";
       flake = false;
     };
+    sketchybar = {
+      url = "github:pikaro/sketchybar/main";
+      flake = false;
+    };
     dotbin = {
       url = "github:pikaro/dotbin/master";
       flake = false;
@@ -27,10 +31,19 @@
       url = "github:pikaro/dotinc/master";
       flake = false;
     };
+    wallpapers = {
+      url = "github:pikaro/wallpapers/main";
+      flake = false;
+    };
     keyboard = {
       url = "https://sourceforge.net/projects/uscustom/files/uscustom.2012-08-30.zip/download";
       type = "tarball";
       flake = false;
+    };
+    sketchybar-app-font = {
+      flake = false;
+      type = "file";
+      url = "https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.5/sketchybar-app-font.ttf";
     };
   };
 

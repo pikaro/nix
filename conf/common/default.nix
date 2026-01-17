@@ -148,6 +148,7 @@
         enable = true;
         text = ''
           sudo -u '${sysInfo.user}' ${activationScript}
+          launchctl config user path $HOME/.local/gitbin:$HOME/.local/bin:$HOME/.bin:$HOME/.nix-profile/bin:/etc/profiles/per-user/david.reis/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/opt/homebrew/bin:/opt/homebrew/sbin::/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
         '';
       };
     };
@@ -200,6 +201,7 @@
       };
 
       NSGlobalDomain = {
+        _HIHideMenuBar = true;
         "com.apple.swipescrolldirection" = false;
         NSAutomaticCapitalizationEnabled = false;
         NSAutomaticDashSubstitutionEnabled = false;
@@ -229,6 +231,7 @@
       CustomUserPreferences = {
         NSGlobalDomain = {
           WebKitDeveloperExtras = true;
+          NSWindowShouldDragOnGesture = true;
         };
 
         "com.apple.desktopservices" = {

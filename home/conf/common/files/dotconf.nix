@@ -1,6 +1,7 @@
 {inputs, ...}: {
   ".config/kitty".source = "${inputs.kitty}";
   ".config/nvim".source = "${inputs.nvim}";
+  ".config/sketchybar".source = "${inputs.sketchybar}";
   ".local/gitbin".source = "${inputs.dotbin}";
   ".local/shell-include".source = "${inputs.dotinc}";
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
@@ -19,6 +20,8 @@
   '';
 
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";
+  ".config/aerospace/aerospace.toml".source = "${inputs.dotconf}/aerospace.toml";
+
   ".mdformat.toml".text = ''
     wrap=80
     extensions=["gfm", "mkdocs", "frontmatter"]

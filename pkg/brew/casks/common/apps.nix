@@ -1,4 +1,6 @@
 [
+  # FIXME: >6mo outdated in Nix
+  "nikitabobko/tap/aerospace"
   "gimp"
   "google-chrome"
   "google-chrome@canary"
@@ -9,8 +11,12 @@
   "localsend"
   "kitty"
   "karabiner-elements"
+  "marta"
   "nuage"
   "openmtp"
+  "sf-symbols"
+  "font-sf-mono"
+  "font-sf-pro"
   "slack"
   "spotify"
   "unnaturalscrollwheels"

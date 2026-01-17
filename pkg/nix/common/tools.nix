@@ -1,9 +1,11 @@
 {pkgs}:
 with pkgs; [
   baobab
+  choose-gui
   coreutils
   graphviz
   imagemagick
+  jankyborders
   jd-diff-patch
   marp-cli
   md2pdf
@@ -11,6 +13,8 @@ with pkgs; [
   nix-tree
   plantuml
   rlwrap
+  sketchybar
+  sketchybar-app-font
   sqlite
   starship
   tenv
