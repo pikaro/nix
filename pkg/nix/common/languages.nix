@@ -3,6 +3,15 @@ with pkgs; [
   cargo
   go
   gopls
+  (
+    lua54Packages.lua.withPackages
+    (
+      ps:
+        with ps; [
+          sbarlua
+        ]
+    )
+  )
   nodejs
   pnpm
   pkgconf
