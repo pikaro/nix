@@ -1,6 +1,7 @@
 [
   "arduino-ide"
   "libreoffice"
+  "proton-mail-bridge"
   "signal"
   "steam"
   "telegram"
