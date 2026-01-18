@@ -230,7 +230,9 @@
       };
 
       dock = {
-        autohide = false;
+        autohide = true;
+        autohide-delay = 0.1;
+        autohide-time-modifier = 0.1;
         magnification = false;
         minimize-to-application = true;
         show-recents = true;
