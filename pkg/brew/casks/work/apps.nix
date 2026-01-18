@@ -3,5 +3,5 @@
   "1password-cli"
   "amazon-chime"
   "microsoft-teams"
-  "productive"
+  "google-chrome@canary"
 ]
