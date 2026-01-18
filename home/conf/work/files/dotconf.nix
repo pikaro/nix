@@ -27,9 +27,9 @@
   ".sketchybar_system.lua".text = ''
     return {
         notifications = {
-            "WhatsApp",
-            "Signal",
-            "Telegram",
+            "Microsoft Teams",
+            "Microsoft Outlook",
+            "Microsoft To Do",
         },
     }
   '';
