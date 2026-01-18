@@ -23,4 +23,14 @@
       }
     }
   '';
+
+  ".sketchybar_system.lua".text = ''
+    return {
+        notifications = {
+            "WhatsApp",
+            "Signal",
+            "Telegram",
+        },
+    }
+  '';
 }

@@ -9,6 +9,7 @@ with pkgs; [
       ps:
         with ps; [
           sbarlua
+          cjson
         ]
     )
   )

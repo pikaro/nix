@@ -10,7 +10,7 @@
         "monitors": ["EB321HQU"]
       },
       "c": {
-        "apps": ["Signal", "WhatsApp"],
+        "apps": ["Signal", "WhatsApp", "Telegram"],
         "monitors": []
       },
       "t": {
@@ -20,7 +20,25 @@
       "m": {
         "apps": ["Mail"],
         "monitors": []
+      },
+      "a": {
+        "apps": ["ChatGPT"],
+        "monitors": []
+      },
+      "s": {
+        "apps": ["Spotify", "Nuage"],
+        "monitors": ["Acer CB241HY"]
       }
+    }
+  '';
+
+  ".sketchybar_system.lua".text = ''
+    return {
+        notifications = {
+            "WhatsApp",
+            "Signal",
+            "Telegram",
+        },
     }
   '';
 }

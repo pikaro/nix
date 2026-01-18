@@ -14,7 +14,6 @@ with pkgs; [
   plantuml
   rlwrap
   sketchybar
-  sketchybar-app-font
   sqlite
   starship
   tenv
