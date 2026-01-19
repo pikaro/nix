@@ -16,11 +16,9 @@ with pkgs; [
   nodejs
   pnpm
   pkgconf
-  # FIXME: BROKEN
-  # poetry
-  # WARNING: python314 is broken
+  poetry
   (
-    python313.withPackages
+    python314.withPackages
     (
       ps:
         with ps; [
