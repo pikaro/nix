@@ -3,6 +3,7 @@ with pkgs; [
   colordiff
   curl
   delta
+  desktoppr
   dive
   flock
   fswatch
