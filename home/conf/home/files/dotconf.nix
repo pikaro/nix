@@ -3,11 +3,11 @@
     {
       "k": {
         "apps": ["kitty"],
-        "monitors": ["EB321HQU"]
+        "monitors": ["EB321HQU", "DELL P3421W"]
       },
       "w": {
         "apps": ["Firefox"],
-        "monitors": ["EB321HQU"]
+        "monitors": ["EB321HQU", "DELL P3421W"]
       },
       "c": {
         "apps": ["Signal", "WhatsApp", "Telegram"],
@@ -15,7 +15,7 @@
       },
       "t": {
         "apps": ["Vikunja", "Joplin"],
-        "monitors": ["Acer CB241HY"]
+        "monitors": ["Acer CB241HY", "DELL U2718Q"]
       },
       "m": {
         "apps": ["Mail"],
@@ -27,7 +27,7 @@
       },
       "s": {
         "apps": ["Spotify", "Nuage"],
-        "monitors": ["Acer CB241HY"]
+        "monitors": ["Acer CB241HY", "DELL U2718Q"]
       }
     }
   '';
