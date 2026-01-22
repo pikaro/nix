@@ -290,6 +290,36 @@
 
         "com.apple.symbolichotkeys" = {
           AppleSymbolicHotKeys = {
+            # Screenshot entire monitors disabled
+            "28" = {enabled = false;};
+            "29" = {enabled = false;};
+
+            # Screenshot to file with Cmd+[
+            "30" = {
+              enabled = 1;
+              value = {
+                parameters = [
+                  91
+                  33
+                  1048576
+                ];
+                type = "standard";
+              };
+            };
+
+            # Screenshot to clipboard with Cmd+]
+            "31" = {
+              enabled = 1;
+              value = {
+                parameters = [
+                  93
+                  30
+                  1048576
+                ];
+                type = "standard";
+              };
+            };
+
             # Mission control / windows (C+Up/Down)
             "32" = {enabled = false;};
             "33" = {enabled = false;};
@@ -297,9 +327,6 @@
             # Next / prev input source (C+Space)
             "60" = {enabled = false;};
             "61" = {enabled = false;};
-
-            # Context window (C+Enter)
-            "159" = {enabled = false;};
 
             # Map Space left/right to C+S instead of C
             "81" = {
@@ -324,6 +351,9 @@
                 type = "standard";
               };
             };
+
+            # Context window (C+Enter)
+            "159" = {enabled = false;};
           };
         };
       };
