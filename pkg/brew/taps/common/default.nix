@@ -1,0 +1,3 @@
+[
+  "nikitabobko/homebrew-tap"
+]

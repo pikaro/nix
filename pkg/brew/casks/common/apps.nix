@@ -1,6 +1,6 @@
 [
   # FIXME: >6mo outdated in Nix
-  "nikitabobko/tap/aerospace"
+  "aerospace"
   "chatgpt"
   "gimp"
   "google-chrome"
