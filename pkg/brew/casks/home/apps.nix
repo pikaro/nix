@@ -1,6 +1,7 @@
 [
   "arduino-ide"
   "joplin"
+  "kicad"
   "libreoffice"
   "proton-mail-bridge"
   "signal"
