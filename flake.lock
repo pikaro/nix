@@ -20,11 +20,11 @@
     "dotconf": {
       "flake": false,
       "locked": {
-        "lastModified": 1769337108,
-        "narHash": "sha256-mo2IvO9YtGIJ6ddQ7lXO3bX7GyCrfkrrGUCmLadCc3s=",
+        "lastModified": 1769338690,
+        "narHash": "sha256-tVp3ELZxfpBjivrOcsel1yeYM3pyBCSFfTB8tueNpbg=",
         "owner": "pikaro",
         "repo": "dotconf",
-        "rev": "78b525dbd8b5c3815226d6a36cdc5aa169e48989",
+        "rev": "0a762957121feb3fbe3509ac9f93f40a696d8c9c",
         "type": "github"
       },
       "original": {
