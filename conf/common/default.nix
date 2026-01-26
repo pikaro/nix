@@ -270,6 +270,7 @@
         NSGlobalDomain = {
           WebKitDeveloperExtras = true;
           NSWindowShouldDragOnGesture = true;
+          SLSMenuBarUseBlurredAppearance = true;
         };
 
         "com.apple.desktopservices" = {
