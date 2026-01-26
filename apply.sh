@@ -21,12 +21,14 @@ _log() {
 _log "Updating nix channels"
 
 if [ "${1:-}" = "-u" ]; then
+    git pull
     _log "Updating all flakes"
     nix flake update
     shift
 fi
 
 if [ "${1:-}" = "-U" ]; then
+    git pull
     SYSTEM_FLAKES_JSON="$(printf '%s\n' "${SYSTEM_FLAKES[@]}" | jq -R . | jq -s .)"
     nix flake metadata --json |
         jq -r --argjson system "${SYSTEM_FLAKES_JSON}" '(.locks.nodes | keys - $system)[]' | tr '\n' ' ' |
