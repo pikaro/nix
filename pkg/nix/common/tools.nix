@@ -3,6 +3,7 @@ with pkgs; [
   baobab
   choose-gui
   coreutils
+  fd
   graphviz
   imagemagick
   jankyborders
@@ -12,6 +13,7 @@ with pkgs; [
   mermaid-cli
   nix-tree
   plantuml
+  prek
   rlwrap
   sketchybar
   sqlite

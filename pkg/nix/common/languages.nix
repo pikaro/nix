@@ -10,6 +10,21 @@ with pkgs; [
         with ps; [
           sbarlua
           cjson
+          luacheck
+          luafmt
+          luarocks
+        ]
+    )
+  )
+  (
+    php85Packages.php.withPackages
+    (
+      ps:
+        with ps; [
+          php-cs-fixer
+          phpstan
+          phpunit
+          composer
         ]
     )
   )
