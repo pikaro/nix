@@ -20,7 +20,8 @@ with pkgs; [
   starship
   tenv
   terraform-docs
-  tree-sitter
+  # FIXME: OUTDATED
+  # tree-sitter
   weechat
   yq-go
 ]
