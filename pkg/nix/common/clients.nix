@@ -1,6 +1,7 @@
 {pkgs}:
 with pkgs; [
-  argocd
+  # FIXME: Broken
+  # argocd
   gh
   kubectl
   mariadb
