@@ -34,7 +34,7 @@
     ColumnLimit: 80
   '';
 
-  ".platformio/clangd".text = ''
+  ".platformio/.clangd".text = ''
     CompileFlags:
       Add:
         - -w
