@@ -140,6 +140,7 @@
     AWS_EC2_METADATA_DISABLED = "true";
     DOCKER_CLI_EXPERIMENTAL = "1";
     BUILDX_EXPERIMENTAL = "1";
+    TG_LOG_SHOW_ABS_PATHS = "1";
   };
 
   fonts.packages = with pkgs; [
