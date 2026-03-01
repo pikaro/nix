@@ -1,6 +1,7 @@
 [
   # FIXME: >6mo outdated in Nix
   "aerospace"
+  "claude"
   "chatgpt"
   "gimp"
   "google-chrome"
