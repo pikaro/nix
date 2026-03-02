@@ -47,7 +47,8 @@ if git diff --quiet flake.lock; then
     _log "No changes in flake.lock"
 else
     _log "flake.lock has changed, committing the changes"
-    git commit -am "Update flake.lock"
+    git add flake.lock
+    git commit -m "Update flake.lock"
 fi
 
 _log "Rebuilding nix-darwin configuration"
