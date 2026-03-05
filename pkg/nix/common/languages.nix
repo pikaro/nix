@@ -25,7 +25,6 @@ with pkgs; [
       ps:
         with ps; [
           boto3
-	  coverage
           customtkinter
           gitpython
           datamodel-code-generator
