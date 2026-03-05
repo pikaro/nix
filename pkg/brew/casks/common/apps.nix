@@ -3,6 +3,7 @@
   "aerospace"
   "claude"
   "chatgpt"
+  "codex"
   "gimp"
   "google-chrome"
   "discord"
