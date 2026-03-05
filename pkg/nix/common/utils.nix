@@ -20,6 +20,7 @@ with pkgs; [
   ripgrep
   rsync
   socat
+  tree
   wdiff
   wget
 ]
