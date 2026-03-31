@@ -37,11 +37,11 @@
     "dotinc": {
       "flake": false,
       "locked": {
-        "lastModified": 1774959668,
-        "narHash": "sha256-t7w25o3TOC8g+7UPfP1ohPRjRwmb25x2WIrR8PZv5ic=",
+        "lastModified": 1774991654,
+        "narHash": "sha256-527GFxet/JCaM6Xs/ibbONIQnU1psI6JxMTPBjCw5oU=",
         "owner": "pikaro",
         "repo": "dotinc",
-        "rev": "273f3323476d293ccaa309819078bf79ee1be417",
+        "rev": "d91abeaa69931a362eb72fa356f55139fa071233",
         "type": "github"
       },
       "original": {
@@ -142,11 +142,11 @@
     "nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1772739447,
-        "narHash": "sha256-8apD/cxGmzXT18ekBSIHIIC4bMhpRsJwRV/Y1+5TEiQ=",
+        "lastModified": 1774958987,
+        "narHash": "sha256-4Zs0T7KxSKeRNVcd7ttjbCW6NpDDqdTx1OG2/J8APVY=",
         "owner": "pikaro",
         "repo": "nvim",
-        "rev": "0b07e9b9b86bacb16082dac7881fe261ff548cd9",
+        "rev": "95caa7c43bea008f7f7bfe3c7f7857970c1301ea",
         "type": "github"
       },
       "original": {
