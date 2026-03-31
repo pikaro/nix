@@ -24,24 +24,6 @@
   initContent = ''
     stty -ixon
 
-    bindkey -e
-
-    WORDCHARS=
-
-    autoload -U select-word-style
-    select-word-style normal
-    zle -N backward-kill-shell-word backward-kill-word-match
-    zstyle :zle:backward-kill-shell-word word-style shell
-
-    bindkey '^[[1;5C' forward-word
-    bindkey '^[[1;5D' backward-word
-    bindkey '^[[A' history-search-backward
-    bindkey '^[[B' history-search-forward
-    bindkey '^Q' backward-kill-word
-    bindkey '^W' backward-kill-shell-word
-    bindkey '^[[3~' delete-char
-    bindkey '^R' history-incremental-search-backward
-
     . ~/.local/shell-include/entrypoint.sh;
   '';
 
