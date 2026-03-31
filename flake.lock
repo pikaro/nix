@@ -175,11 +175,11 @@
     "sketchybar": {
       "flake": false,
       "locked": {
-        "lastModified": 1769246017,
-        "narHash": "sha256-SMB1fhswIpIz1UQ4ChoAC66RKaaxL+NKSx5r85HtV2c=",
+        "lastModified": 1774958932,
+        "narHash": "sha256-Sf65JvW+PQUi7FjT59xP9yc2vnEZb1zEDSRvbFuKxvc=",
         "owner": "pikaro",
         "repo": "sketchybar",
-        "rev": "3ef4fdc02601a1176b4443404f12b528504ebe57",
+        "rev": "422e64c20a00bc5fe4af4f2a8431b20ae8bbd84c",
         "type": "github"
       },
       "original": {
