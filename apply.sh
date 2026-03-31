@@ -54,13 +54,15 @@ fi
 _log "Rebuilding nix-darwin configuration"
 sudo darwin-rebuild switch --flake . "$@"
 
-if [ "${CLEANUP}" -eq 1 ]; then
-    _log "Cleaning up brew"
-    brew cleanup --prune=all
-    _log "Cleaning up old nix generations"
-    nix-env --delete-generations old
-    _log "Collecting nix garbage"
-    nix-collect-garbage -d
-    _log "Optimising nix store"
-    nix-store --optimise
-fi
+_log "Cleaning up brew"
+brew cleanup --prune=all
+_log "Deleting old profile entries"
+sudo -i nix profile wipe-history --profile /nix/var/nix/profiles/system --older-than 7d
+_log "Cleaning up old nix generations"
+nix-env --delete-generations old
+sudo nix-env --delete-generations old
+_log "Collecting nix garbage"
+nix-collect-garbage -d
+sudo nix-collect-garbage -d
+_log "Optimising nix store"
+nix-store --optimise
