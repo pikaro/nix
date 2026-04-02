@@ -24,6 +24,8 @@
   initContent = ''
     stty -ixon
 
+    bindkey '^[[3~' delete-char
+
     . ~/.local/shell-include/entrypoint.sh;
   '';
 
