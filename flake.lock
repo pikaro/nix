@@ -37,11 +37,11 @@
     "dotinc": {
       "flake": false,
       "locked": {
-        "lastModified": 1774991654,
-        "narHash": "sha256-527GFxet/JCaM6Xs/ibbONIQnU1psI6JxMTPBjCw5oU=",
+        "lastModified": 1775038105,
+        "narHash": "sha256-yNyPE4yaDUevjyKR7EfkgWgGa6GYOT4f1YBugfxrsQQ=",
         "owner": "pikaro",
         "repo": "dotinc",
-        "rev": "d91abeaa69931a362eb72fa356f55139fa071233",
+        "rev": "13eb6bd23e1f73b5a678748e2b58f1dacc59989b",
         "type": "github"
       },
       "original": {
