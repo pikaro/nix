@@ -6,4 +6,6 @@
   "ncdu"
   # FIXME: OUTDATED
   "tree-sitter-cli"
+  # FIXME: OUTDATED
+  "terraform-docs"
 ]

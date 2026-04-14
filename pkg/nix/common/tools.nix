@@ -19,7 +19,6 @@ with pkgs; [
   sqlite
   starship
   tenv
-  terraform-docs
   # FIXME: OUTDATED
   # tree-sitter
   weechat
