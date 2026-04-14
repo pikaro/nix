@@ -3,14 +3,14 @@ with pkgs; [
   cargo
   go
   gopls
+  lua54Packages.luacheck
   (
-    lua54Packages.lua.withPackages
+    lua55Packages.lua.withPackages
     (
       ps:
         with ps; [
           sbarlua
           cjson
-          luacheck
           luarocks
         ]
     )
@@ -27,7 +27,8 @@ with pkgs; [
           boto3
           customtkinter
           gitpython
-          datamodel-code-generator
+          # FIXME: BROKEN
+          # datamodel-code-generator
           mdformat
           mdformat-gfm
           mdformat-mkdocs
