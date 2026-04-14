@@ -3,11 +3,11 @@
     "dotbin": {
       "flake": false,
       "locked": {
-        "lastModified": 1776187001,
-        "narHash": "sha256-RdUHiXrCgbQGXixKAuh8zJxUEim7lsYs1hg0vBNszkA=",
+        "lastModified": 1776187986,
+        "narHash": "sha256-18784L0AX6cNvqDwru8da0U6MCSz14PpNgxWDkymtGE=",
         "owner": "pikaro",
         "repo": "dotbin",
-        "rev": "4344fc8c934db608c89e686d4b5389dd3f2dc98e",
+        "rev": "5304b2b740b5b3b4a0a1fdd5da4205b3e040f219",
         "type": "github"
       },
       "original": {
@@ -37,11 +37,11 @@
     "dotinc": {
       "flake": false,
       "locked": {
-        "lastModified": 1775038105,
-        "narHash": "sha256-yNyPE4yaDUevjyKR7EfkgWgGa6GYOT4f1YBugfxrsQQ=",
+        "lastModified": 1776187810,
+        "narHash": "sha256-CEPoq9Hku00srB57YyJWn2HbgV4kIjALDPeozcUjJR0=",
         "owner": "pikaro",
         "repo": "dotinc",
-        "rev": "13eb6bd23e1f73b5a678748e2b58f1dacc59989b",
+        "rev": "afa41c0ba6d29d9d90b92e074e7d4ec6b2823583",
         "type": "github"
       },
       "original": {
