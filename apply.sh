@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# shellcheck source=../dotinc/entrypoint.sh
+. "${HOME}/.local/shell-include/entrypoint.sh"
+
 set -eEuo pipefail
 
 SYSTEM_FLAKES=(
@@ -9,14 +12,8 @@ SYSTEM_FLAKES=(
     "home-manager"
 )
 
-_log() {
-    if [[ ! -t 0 ]]; then
-        MSG="$1: $(cat /dev/stdin)"
-    else
-        MSG="$1"
-    fi
-    printf "[%s] %s\n" "$(date +"%Y-%m-%d %H:%M:%S")" "$MSG" >/dev/stderr
-}
+_log "Cleaning local symlinks"
+nixlink clean
 
 _log "Updating nix channels"
 
@@ -34,12 +31,6 @@ if [ "${1:-}" = "-U" ]; then
         jq -r --argjson system "${SYSTEM_FLAKES_JSON}" '(.locks.nodes | keys - $system)[]' | tr '\n' ' ' |
         tee >(_log "Updating flakes") |
         xargs nix flake update
-    shift
-fi
-
-CLEANUP=0
-if [ "${1:-}" = "-c" ]; then
-    CLEANUP=1
     shift
 fi
 
