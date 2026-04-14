@@ -16,6 +16,7 @@ with pkgs; [
   jq
   nmap
   ov
+  poppler-utils
   pstree
   ripgrep
   rsync
