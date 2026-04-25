@@ -30,7 +30,7 @@ if [ "${1:-}" = "-U" ]; then
     nix flake metadata --json |
         jq -r --argjson system "${SYSTEM_FLAKES_JSON}" '(.locks.nodes | keys - $system)[]' | tr '\n' ' ' |
         tee >(_log "Updating flakes") |
-        xargs nix flake update
+        xargs nix flake update || { _fatal "Failed to update flakes"; }
     shift
 fi
 
