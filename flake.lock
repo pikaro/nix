@@ -3,11 +3,11 @@
     "dotbin": {
       "flake": false,
       "locked": {
-        "lastModified": 1776188109,
-        "narHash": "sha256-RHl1rayhCsdODIJlWzECmgdlEWcl9fWxN2sEzFoE0mo=",
+        "lastModified": 1778013355,
+        "narHash": "sha256-GdVVdDwTyGfEk4xtuEtPUvBzXKhBm/0Oqfz1bs4nCu0=",
         "owner": "pikaro",
         "repo": "dotbin",
-        "rev": "6c7316fcf491c0a86dc72d31fc77db52d376863b",
+        "rev": "db1ae7bdd8f2e5c3e77542923158269ccc43b739",
         "type": "github"
       },
       "original": {
