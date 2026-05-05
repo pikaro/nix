@@ -5,19 +5,7 @@
   ".local/gitbin".source = "${inputs.dotbin}";
   ".local/shell-include".source = "${inputs.dotinc}";
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
-
-  ".aider.model.settings.yml".text = ''
-    - name: aider/extra_params
-      extra_params:
-        extra_headers:
-          Editor-Version: vscode/42
-  '';
-  ".aider.conf.yml".text = ''
-    model: github_copilot/gpt-5
-    editor-model: github_copilot/gpt-5
-    weak-model: github_copilot/gpt-5-mini
-    show-model-warnings: false
-  '';
+  ".config/ruff/ruff.toml".source = "${inputs.dotconf}/ruff.toml";
 
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";
   ".config/aerospace/aerospace.toml".source = "${inputs.dotconf}/aerospace.toml";
@@ -53,5 +41,20 @@
       ClangTidy:
         Remove:
           - '*'
+  '';
+
+  ".copilot-tools.json".text = ''
+    {
+      "shell": [
+        "ls",
+        "grep",
+        "rg",
+        "sed",
+        "awk",
+        "bat",
+        "cat",
+        "git"
+      ]
+    }
   '';
 }
