@@ -4,6 +4,7 @@
   "mas"
   "media-control"
   "ncdu"
+  "qman"
   # FIXME: OUTDATED
   "tree-sitter-cli"
   # FIXME: OUTDATED
