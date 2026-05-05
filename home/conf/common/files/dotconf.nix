@@ -7,6 +7,13 @@
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
   ".config/ruff/ruff.toml".source = "${inputs.dotconf}/ruff.toml";
 
+  ".config/qman/qman.conf".text = ''
+    [misc]
+    system_type=darwin
+    apropos_path=_fakeapropos
+    whatis_path=_fakewhatis
+  '';
+
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";
   ".config/aerospace/aerospace.toml".source = "${inputs.dotconf}/aerospace.toml";
 
@@ -20,27 +27,6 @@
     BasedOnStyle: LLVM
     IndentWidth: 4
     ColumnLimit: 80
-  '';
-
-  ".platformio/.clangd".text = ''
-    CompileFlags:
-      Add:
-        - -w
-      Remove:
-        - -Wall
-        - -Wextra
-        - -Wshadow
-        - -Wshadow-field
-        - -fno-shrink-wrap
-        - -fno-tree-switch-conversion
-        - -fstrict-volatile-bitfields
-        - -mdisable-hardware-atomics
-    Diagnostics:
-      Suppress: ['.*']
-      UnusedIncludes: None
-      ClangTidy:
-        Remove:
-          - '*'
   '';
 
   ".copilot-tools.json".text = ''

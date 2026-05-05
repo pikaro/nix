@@ -41,4 +41,25 @@
         },
     }
   '';
+
+  ".platformio/.clangd".text = ''
+    CompileFlags:
+      Add:
+        - -w
+      Remove:
+        - -Wall
+        - -Wextra
+        - -Wshadow
+        - -Wshadow-field
+        - -fno-shrink-wrap
+        - -fno-tree-switch-conversion
+        - -fstrict-volatile-bitfields
+        - -mdisable-hardware-atomics
+    Diagnostics:
+      Suppress: ['.*']
+      UnusedIncludes: None
+      ClangTidy:
+        Remove:
+          - '*'
+  '';
 }

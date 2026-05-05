@@ -15,7 +15,7 @@
       useUserPackages = true;
       extraSpecialArgs = builtins.removeAttrs context ["lib"];
       users.${sysInfo.user} = {
-        imports = utils.imp.getImports ./conf;
+        imports = utils.imp.getImports ./conf ++ [./launchd];
         home.sessionVariables = utils.imp.doImports' ./vars {};
       };
     };
