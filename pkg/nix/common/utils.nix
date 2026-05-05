@@ -19,6 +19,13 @@ with pkgs; [
   poppler-utils
   pstree
   ripgrep
+  ripgrep-all
+  hyperfine
+  ast-grep
+  fd
+  sd
+  fzf
+
   rsync
   socat
   tree

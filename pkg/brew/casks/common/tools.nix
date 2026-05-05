@@ -1,3 +1,4 @@
 [
   "hammerspoon"
+  "copilot-cli"
 ]
