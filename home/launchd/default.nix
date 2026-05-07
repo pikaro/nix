@@ -47,7 +47,7 @@
     config =
       {
         Label = label;
-        ProgramArguments = [program];
+        ProgramArguments = ["${program}"];
         RunAtLoad = runAtLoad;
         StandardOutPath = stdout;
         StandardErrorPath = stderr;

@@ -9,9 +9,10 @@
 
   ".config/qman/qman.conf".text = ''
     [misc]
+    groff_path=/opt/homebrew/bin/groff
     system_type=darwin
-    apropos_path=_fakeapropos
-    whatis_path=_fakewhatis
+    apropos_path=/usr/local/bin/fakeapropos
+    whatis_path=/usr/local/bin/fakewhatis
   '';
 
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";

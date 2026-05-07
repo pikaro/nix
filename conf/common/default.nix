@@ -3,6 +3,7 @@
   sysInfo,
   utils,
   lib,
+  inputs,
   ...
 }: {
   config,
@@ -177,16 +178,45 @@
         loginItems = [
           "/Applications/UnnaturalScrollWheels.app"
         ];
+        scripts = {
+          "/usr/local/bin/fakeapropos" = {
+            source = "${inputs.dotbin}/_fakeapropos";
+          };
+          "/usr/local/bin/fakewhatis" = {
+            source = "${inputs.dotbin}/_fakewhatis";
+          };
+        };
         loginItemCommands = utils.misc.formatList loginTpl loginItems;
         activationCommands = loginItemCommands ++ commands;
         activationCommand = lib.concatStringsSep "\n" activationCommands;
         activationScript = pkgs.writeShellScript "activation-script" activationCommand;
+        scriptInstallCommands =
+          lib.mapAttrsToList
+          (
+            target: {
+              source,
+              owner ? "root",
+              group ? "wheel",
+              mode ? "755",
+            }: ''
+              install -d -m 755 -o ${owner} -g ${group} ${lib.escapeShellArg (builtins.dirOf target)}
+              install -m ${mode} -o ${owner} -g ${group} ${lib.escapeShellArg (toString source)} ${lib.escapeShellArg target}
+            ''
+          )
+          scripts;
+        scriptInstallCommand =
+          lib.concatStringsSep "\n"
+          scriptInstallCommands;
       in {
         enable = true;
-        text = ''
-          sudo -u '${sysInfo.user}' ${activationScript}
-          launchctl config user path $HOME/.local/gitbin:$HOME/.local/bin:$HOME/.bin:$HOME/.nix-profile/bin:/etc/profiles/per-user/david.reis/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/opt/homebrew/bin:/opt/homebrew/sbin::/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-        '';
+        text =
+          ''
+            sudo -u '${sysInfo.user}' ${activationScript}
+            install -d -m 755 -o root -g wheel /usr/local/bin
+            ${scriptInstallCommand}
+            launchctl config user path $HOME/.local/gitbin:$HOME/.local/bin:$HOME/.bin:$HOME/.nix-profile/bin:/etc/profiles/per-user/david.reis/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/opt/homebrew/bin:/opt/homebrew/sbin::/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+          ''
+          + "\n";
       };
     };
 

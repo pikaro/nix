@@ -93,4 +93,8 @@
   lfs = {
     enable = true;
   };
+  signing = {
+    # format is retired, kept giving warnings
+    format = null;
+  };
 }

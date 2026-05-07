@@ -12,9 +12,9 @@
     startInterval = 86400;
     runAtLoad = true;
     text = ''
-      DB="$${HOME}/.local/cache/qman/db.txt"
-      mkdir -p "$$(dirname "$${DB}")"
-      /usr/bin/apropos "." >"$${DB}"
+      DB="$HOME/.local/cache/qman/db.txt"
+      mkdir -p "$(dirname "$DB")"
+      /usr/bin/apropos "." >"$DB"
       exit $?
     '';
   };
