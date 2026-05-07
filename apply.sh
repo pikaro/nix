@@ -3,7 +3,7 @@
 # shellcheck source=../dotinc/entrypoint.sh
 . "${HOME}/.local/shell-include/entrypoint.sh"
 
-set -eEuo pipefail
+# set -eEuo pipefail
 
 SYSTEM_FLAKES=(
     "root"
@@ -27,10 +27,15 @@ fi
 if [ "${1:-}" = "-U" ]; then
     git pull
     SYSTEM_FLAKES_JSON="$(printf '%s\n' "${SYSTEM_FLAKES[@]}" | jq -R . | jq -s .)"
-    nix flake metadata --json |
-        jq -r --argjson system "${SYSTEM_FLAKES_JSON}" '(.locks.nodes | keys - $system)[]' | tr '\n' ' ' |
-        tee >(_log "Updating flakes") |
-        xargs nix flake update || { _fatal "Failed to update flakes"; }
+    FLAKES="$(nix flake metadata --json |
+        jq -r --argjson system "${SYSTEM_FLAKES_JSON}" '(.locks.nodes | keys -
+  $system)[]' |
+        tr '\n' ' ')"
+
+    _log "Updating flakes: ${FLAKES:-none}"
+
+    # shellcheck disable=SC2086
+    nix flake update $FLAKES || { _fatal "Failed to update flakes: $FLAKES"; }
     shift
 fi
 
