@@ -4,9 +4,11 @@
   "mas"
   "media-control"
   "ncdu"
+  # FIXME: OUTDATED in Nix
+  "prek"
   "qman"
-  # FIXME: OUTDATED
+  # FIXME: OUTDATED in Nix
   "tree-sitter-cli"
-  # FIXME: OUTDATED
+  # FIXME: OUTDATED in Nix
   "terraform-docs"
 ]

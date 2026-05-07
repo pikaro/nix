@@ -13,7 +13,6 @@ with pkgs; [
   mermaid-cli
   nix-tree
   plantuml
-  prek
   rlwrap
   sketchybar
   sqlite
