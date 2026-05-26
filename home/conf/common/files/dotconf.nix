@@ -1,11 +1,15 @@
 {inputs, ...}: {
   ".config/kitty".source = "${inputs.kitty}";
   ".config/nvim".source = "${inputs.nvim}";
+  ".config/codex".source = "${inputs.codex}";
   ".config/sketchybar".source = "${inputs.sketchybar}";
   ".local/gitbin".source = "${inputs.dotbin}";
   ".local/shell-include".source = "${inputs.dotinc}";
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
   ".config/ruff/ruff.toml".source = "${inputs.dotconf}/ruff.toml";
+
+  ".codex/hooks.json".source = "${inputs.codex}/hooks.json";
+  ".codex/rules".source = "${inputs.codex}/rules";
 
   ".config/qman/qman.conf".text = ''
     [misc]
