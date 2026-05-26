@@ -159,11 +159,11 @@
     "nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1778011225,
-        "narHash": "sha256-PcMN3kwSZusVwQuZYaHXM9W1m1VOimEU6QHcXuCj6Xo=",
+        "lastModified": 1779788571,
+        "narHash": "sha256-TtM3swRmBupuii/YcJtZ8/k+rY3fmJnAVyCWVAONyeg=",
         "owner": "pikaro",
         "repo": "nvim",
-        "rev": "e86aec936cb6285b3f432e109dedd028fd3c3b0c",
+        "rev": "6b25467021fa5372d11a213b1c02e70d12d23730",
         "type": "github"
       },
       "original": {
