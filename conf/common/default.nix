@@ -15,7 +15,13 @@
     stateVersion = 6;
     primaryUser = sysInfo.user;
   };
-  nixpkgs.hostPlatform = sysInfo.platform;
+  nixpkgs = {
+    hostPlatform = sysInfo.platform;
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = pkg: true;
+    };
+  };
 
   security.pam.services.sudo_local.touchIdAuth = true;
 
