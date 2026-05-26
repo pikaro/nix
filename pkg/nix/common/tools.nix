@@ -1,6 +1,5 @@
 {pkgs}:
 with pkgs; [
-  baobab
   choose-gui
   coreutils
   fd
