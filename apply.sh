@@ -3,7 +3,7 @@
 # shellcheck source=../dotinc/entrypoint.sh
 . "${HOME}/.local/shell-include/entrypoint.sh"
 
-# set -eEuo pipefail
+set -eEuo pipefail
 
 SYSTEM_FLAKES=(
     "root"
