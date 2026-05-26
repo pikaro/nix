@@ -1,13 +1,30 @@
 {
   "nodes": {
+    "codex": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779786614,
+        "narHash": "sha256-uwka/6Q3ZP7CuVixXdyHYBk94MzrcaI4GmQ+euQcCLs=",
+        "owner": "pikaro",
+        "repo": "codex",
+        "rev": "20930dd90a64aeef444024bfed3bb2722ffa6a00",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pikaro",
+        "ref": "master",
+        "repo": "codex",
+        "type": "github"
+      }
+    },
     "dotbin": {
       "flake": false,
       "locked": {
-        "lastModified": 1778013355,
-        "narHash": "sha256-GdVVdDwTyGfEk4xtuEtPUvBzXKhBm/0Oqfz1bs4nCu0=",
+        "lastModified": 1779788071,
+        "narHash": "sha256-Vzd52F5RnHr0mteasIHNPBw6mMaqtPfAd7iuvFTfXMs=",
         "owner": "pikaro",
         "repo": "dotbin",
-        "rev": "db1ae7bdd8f2e5c3e77542923158269ccc43b739",
+        "rev": "b169a2631201a5220ee7a66e5674337074b1b628",
         "type": "github"
       },
       "original": {
@@ -158,6 +175,7 @@
     },
     "root": {
       "inputs": {
+        "codex": "codex",
         "dotbin": "dotbin",
         "dotconf": "dotconf",
         "dotinc": "dotinc",
