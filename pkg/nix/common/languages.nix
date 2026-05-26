@@ -24,6 +24,7 @@ with pkgs; [
     (
       ps:
         with ps; [
+          ansible-core
           boto3
           customtkinter
           gitpython
