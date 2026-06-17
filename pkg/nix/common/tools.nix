@@ -8,7 +8,7 @@ with pkgs; [
   jankyborders
   jd-diff-patch
   marp-cli
-  md2pdf
+  # md2pdf
   mermaid-cli
   nix-tree
   plantuml
