@@ -20,11 +20,11 @@
     "dotbin": {
       "flake": false,
       "locked": {
-        "lastModified": 1782662505,
-        "narHash": "sha256-3E3xut8z5Q3rlH867cre7FYgSJMSmC8pFxBhq1auAIU=",
+        "lastModified": 1783289093,
+        "narHash": "sha256-hcX2TQkLZcIyvpTatz4v8za8dRVjm5+sTiOeKPLtFyY=",
         "owner": "pikaro",
         "repo": "dotbin",
-        "rev": "0c34e5b2fc7715b4157541a734e8cbcb27297b6c",
+        "rev": "e39b70a03778f48af03a2b4ce275c793c2da4355",
         "type": "github"
       },
       "original": {
@@ -75,11 +75,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782657028,
-        "narHash": "sha256-PHTCpYZCMzJYS3phhywqRAZphKVr2zjvlGYa+H20ZZ4=",
+        "lastModified": 1783963347,
+        "narHash": "sha256-r376E2XpakiXwModDHIxlvB6qLq4iFVEq730vxOO4JY=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "4ad9aaae70c9aaab504127f926c0fa9cfbc2b365",
+        "rev": "a45a7c451455a51ae740ec3bce4024b312809c29",
         "type": "github"
       },
       "original": {
@@ -126,11 +126,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781761792,
-        "narHash": "sha256-rCPytmKNjctLloB6UgK5CRrHSwV4b0ygxtJLPPp8R14=",
+        "lastModified": 1783395956,
+        "narHash": "sha256-AAbexQvDoK+6GFJdhY6kqjA+6ECKRkidgWxkn4gMwAA=",
         "owner": "LnL7",
         "repo": "nix-darwin",
-        "rev": "a1fa429e945becaf60468600daf649be4ba0350c",
+        "rev": "d5bd9cd77aea4c0a8f49e7fd85545671a208ed15",
         "type": "github"
       },
       "original": {
@@ -142,11 +142,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1782545840,
-        "narHash": "sha256-PkBPmP5ofNtunCU7/tfn6wi9OLlzFGcHAqqmY+/mwUI=",
+        "lastModified": 1784054972,
+        "narHash": "sha256-Vwn42XBhOCqm2PNLzVMu3MmurDBfxHrZUXa2UUQnJyY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3d46470bb3030020f7e1361f33514854f5bfa86d",
+        "rev": "3889d66586e664adc76aa5c242331d3d71786187",
         "type": "github"
       },
       "original": {
@@ -159,11 +159,11 @@
     "nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1781724498,
-        "narHash": "sha256-dlgMmpZHD0OZ66AX4t7DOImCcCz8fQSqieBcGGkiyG0=",
+        "lastModified": 1784118413,
+        "narHash": "sha256-GpMLrB/HHvEa9o+sw3ErRXgqvBwajBhPY0kSe+89Bck=",
         "owner": "pikaro",
         "repo": "nvim",
-        "rev": "342f6a3c0f6f5dbc18c5fa089a9a4c325b8e6b07",
+        "rev": "b61002fde511779e0bf5dd90d3636977111237a0",
         "type": "github"
       },
       "original": {
