@@ -14,6 +14,7 @@ with pkgs; [
   gitflow
   kubernetes-helm
   jq
+  kustomize
   nmap
   ov
   poppler-utils
@@ -25,9 +26,9 @@ with pkgs; [
   fd
   sd
   fzf
-
   rsync
   socat
+  sox
   tree
   wdiff
   wget

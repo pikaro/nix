@@ -4,6 +4,10 @@
   "mas"
   "media-control"
   "ncdu"
+  # WARNING: Must all be from brew - touchid not available in Nix
+  "gnupg"
+  "pinentry-mac"
+  "pinentry-touchid"
   # FIXME: OUTDATED in Nix
   "prek"
   "qman"
@@ -11,4 +15,6 @@
   "tree-sitter-cli"
   # FIXME: OUTDATED in Nix
   "terraform-docs"
+  # Takes ages to compile in Nix
+  "vault"
 ]

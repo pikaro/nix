@@ -1,5 +1,6 @@
 {pkgs}:
 with pkgs; [
+  bitwarden-cli
   choose-gui
   coreutils
   fd
@@ -8,6 +9,7 @@ with pkgs; [
   jankyborders
   jd-diff-patch
   marp-cli
+  mcp-proxy
   # md2pdf
   mermaid-cli
   nix-tree

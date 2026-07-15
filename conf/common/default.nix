@@ -111,6 +111,7 @@
       "ls" = "ls --color=auto";
       "la" = "ls -A --color=yes";
       "ll" = "ls -lAh --color=yes";
+      "pinentry" = "pinentry-mac";
       "pci" = "prek install --install-hooks";
       "pcr" = "prek run --all-files --verbose";
       "pcu" = "prek autoupdate";
@@ -148,6 +149,7 @@
     DOCKER_CLI_EXPERIMENTAL = "1";
     BUILDX_EXPERIMENTAL = "1";
     TG_LOG_SHOW_ABS_PATHS = "1";
+    VAULT_ADDR = "https://vault.d-reis.com";
   };
 
   fonts.packages = with pkgs; [
@@ -393,6 +395,10 @@
             # Context window (C+Enter)
             "159" = {enabled = false;};
           };
+        };
+
+        "org.gpgtools.common" = {
+          DisableKeychain = true;
         };
       };
     };

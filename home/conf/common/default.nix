@@ -1,4 +1,5 @@
 {
+  config,
   sysInfo,
   utils,
   ...
@@ -14,7 +15,7 @@
     };
 
     # FIXME: How to COPY files which MacOS requires to be physical files instead of symlinks?
-    file = utils.imp.importDir ./files context;
+    file = utils.imp.importDir ./files (context // {inherit config;});
   };
 
   xdg = {

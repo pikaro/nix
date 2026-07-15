@@ -38,6 +38,9 @@ with pkgs; [
           pyobjc-framework-Cocoa
           tabulate
           tkinter
+          pygame
+          numpy
+          pygame-gui
         ]
     )
   )

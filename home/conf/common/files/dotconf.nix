@@ -1,4 +1,9 @@
-{inputs, ...}: {
+{
+config,
+  inputs,
+  sysInfo,
+  ...
+}: {
   ".config/kitty".source = "${inputs.kitty}";
   ".config/nvim".source = "${inputs.nvim}";
   ".config/codex".source = "${inputs.codex}";
@@ -8,8 +13,9 @@
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
   ".config/ruff/ruff.toml".source = "${inputs.dotconf}/ruff.toml";
 
-  ".codex/hooks.json".source = "${inputs.codex}/hooks.json";
-  ".codex/rules".source = "${inputs.codex}/rules";
+  # Source from ~/.config/codex mounted above
+  ".codex/hooks.json".source = config.lib.file.mkOutOfStoreSymlink "/Users/${config.home.username}/.config/codex/hooks.json";
+  ".codex/rules".source = config.lib.file.mkOutOfStoreSymlink "/Users/${sysInfo.user}/.config/codex/rules";
 
   ".config/qman/qman.conf".text = ''
     [misc]
@@ -21,6 +27,10 @@
 
   ".config/karabiner/karabiner.json".source = "${inputs.dotconf}/karabiner.json";
   ".config/aerospace/aerospace.toml".source = "${inputs.dotconf}/aerospace.toml";
+
+  ".gnupg/gpg-agent.conf".text = ''
+    pinentry-program /opt/homebrew/bin/pinentry-touchid
+  '';
 
   ".mdformat.toml".text = ''
     wrap=80
