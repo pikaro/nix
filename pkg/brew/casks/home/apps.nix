@@ -1,5 +1,6 @@
 [
   "arduino-ide"
+  "chatgpt"
   "joplin"
   "kicad"
   "libreoffice"

@@ -1,7 +1,8 @@
 {pkgs}:
 with pkgs; [
   bitwarden-cli
-  choose-gui
+  # FIXME: BROKEN
+  #choose-gui
   coreutils
   fd
   graphviz

@@ -2,7 +2,7 @@
   # FIXME: >6mo outdated in Nix
   "aerospace"
   "claude"
-  "chatgpt"
+  "chatgpt-classic"
   "codex"
   "gimp"
   "google-chrome"
