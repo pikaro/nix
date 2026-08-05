@@ -2,6 +2,7 @@
   "1password"
   "1password-cli"
   "amazon-chime"
+  "claude"
   "microsoft-teams"
   "microsoft-excel"
   "google-chrome@canary"
