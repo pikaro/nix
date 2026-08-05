@@ -39,6 +39,9 @@ if [ "${1:-}" = "-U" ]; then
     shift
 fi
 
+_log "Rebuilding nix-darwin configuration"
+sudo darwin-rebuild switch --flake . "$@"
+
 if git diff --quiet flake.lock; then
     _log "No changes in flake.lock"
 else
@@ -46,9 +49,6 @@ else
     git add flake.lock
     git commit -m "Update flake.lock"
 fi
-
-_log "Rebuilding nix-darwin configuration"
-sudo darwin-rebuild switch --flake . "$@"
 
 _log "Cleaning up brew"
 brew cleanup --prune=all
