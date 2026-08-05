@@ -12,6 +12,7 @@
   # FIXME: OUTDATED in Nix
   "prek"
   "qman"
+  "sbx"
   # FIXME: OUTDATED in Nix
   "tree-sitter-cli"
   # FIXME: OUTDATED in Nix

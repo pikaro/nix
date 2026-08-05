@@ -12,4 +12,8 @@
     name = "hashicorp/tap";
     trusted = true;
   }
+  {
+    name = "docker/tap";
+    trusted = true;
+  }
 ]
