@@ -5,6 +5,7 @@ with pkgs; [
   delta
   desktoppr
   dive
+  ffmpeg
   flock
   fswatch
   gettext
