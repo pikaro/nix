@@ -6,6 +6,7 @@
   "ncdu"
   # WARNING: Must all be from brew - touchid not available in Nix
   "gnupg"
+  "llama.cpp"
   "pinentry-mac"
   "pinentry-touchid"
   # FIXME: OUTDATED in Nix
