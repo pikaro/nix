@@ -1,19 +1,19 @@
 {
   "nodes": {
-    "codex": {
+    "agents": {
       "flake": false,
       "locked": {
-        "lastModified": 1781724650,
-        "narHash": "sha256-nO/GVrJBlXDZ3Lt3Qc+uyQ/YK0OxpvPjE9J+2mhVNRY=",
+        "lastModified": 1787754493,
+        "narHash": "sha256-YvKXaELOO7yUB5vOv206ZYhu6ABytEjd4pT3SMBSWok=",
         "owner": "pikaro",
-        "repo": "codex",
-        "rev": "e80c720d2effef247188bbe519f2a6a26c7b30f1",
+        "repo": "agents",
+        "rev": "62eeebaa0351bb5e9cd75f532f850c9a39a78f1a",
         "type": "github"
       },
       "original": {
         "owner": "pikaro",
         "ref": "master",
-        "repo": "codex",
+        "repo": "agents",
         "type": "github"
       }
     },
@@ -159,11 +159,11 @@
     "nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1785919925,
-        "narHash": "sha256-0OZ+z/XaMcT2vyH1Cbg6sZdUJYNV6Zc0MB4Zw/pjGQU=",
+        "lastModified": 1787754531,
+        "narHash": "sha256-WVnJUjdBEZrl4hozSyUvpjU4JviYuHBN+f966T3BTe0=",
         "owner": "pikaro",
         "repo": "nvim",
-        "rev": "b200561bfdfdec0202b2fbd67ac5d7d0ef768e85",
+        "rev": "2e65f34537649e2a133481f21672a6a2ccf170b0",
         "type": "github"
       },
       "original": {
@@ -175,7 +175,7 @@
     },
     "root": {
       "inputs": {
-        "codex": "codex",
+        "agents": "agents",
         "dotbin": "dotbin",
         "dotconf": "dotconf",
         "dotinc": "dotinc",
@@ -193,11 +193,11 @@
     "sketchybar": {
       "flake": false,
       "locked": {
-        "lastModified": 1776187669,
-        "narHash": "sha256-8pfk+5us27MQLZU569ogULzuPA7Q0xqwwBgQg3anmAY=",
+        "lastModified": 1787754656,
+        "narHash": "sha256-y62xbzwyrO5ekK4vvSyJYaSPgE7nYCmFsbl24PGmI3Q=",
         "owner": "pikaro",
         "repo": "sketchybar",
-        "rev": "c039c811d7f3821c33ea0e274a372a300aff53ab",
+        "rev": "927f98ed2e97a6e0833f74076af708a65115828f",
         "type": "github"
       },
       "original": {
