@@ -5,5 +5,6 @@
   "claude"
   "microsoft-teams"
   "microsoft-excel"
+  "microsoft-word"
   "google-chrome@canary"
 ]
