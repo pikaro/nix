@@ -1,4 +1,10 @@
-{sysInfo, ...}: {
+{
+  lib,
+  sysInfo,
+  ...
+}: let
+  isWork = (sysInfo.profile or "") == "work";
+in {
   enable = true;
   settings = {
     core = {
@@ -77,19 +83,24 @@
       autostash = true;
     };
   };
-  ignores = [
-    "*~"
-    "*.swp"
-    "*.pyc"
-    "*.pyo"
-    "*.pyd"
-    "*.o"
-    "*.out"
-    "*.log"
-    "*.tmp"
-    "*.bak"
-    ".DS_Store"
-  ];
+  ignores =
+    [
+      "*~"
+      "*.swp"
+      "*.pyc"
+      "*.pyo"
+      "*.pyd"
+      "*.o"
+      "*.out"
+      "*.log"
+      "*.tmp"
+      "*.bak"
+      ".DS_Store"
+    ]
+    ++ lib.optionals isWork [
+      "CLAUDE.local.md"
+      ".agents"
+    ];
   lfs = {
     enable = true;
   };

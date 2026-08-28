@@ -6,16 +6,16 @@ config,
 }: {
   ".config/kitty".source = "${inputs.kitty}";
   ".config/nvim".source = "${inputs.nvim}";
-  ".config/codex".source = "${inputs.codex}";
+  ".config/agents".source = "${inputs.agents}";
   ".config/sketchybar".source = "${inputs.sketchybar}";
   ".local/gitbin".source = "${inputs.dotbin}";
   ".local/shell-include".source = "${inputs.dotinc}";
   ".inputrc".source = "${inputs.dotconf}/.inputrc";
   ".config/ruff/ruff.toml".source = "${inputs.dotconf}/ruff.toml";
 
-  # Source from ~/.config/codex mounted above
-  ".codex/hooks.json".source = config.lib.file.mkOutOfStoreSymlink "/Users/${config.home.username}/.config/codex/hooks.json";
-  ".codex/rules".source = config.lib.file.mkOutOfStoreSymlink "/Users/${sysInfo.user}/.config/codex/rules";
+  # Source from ~/.config/agents mounted above
+  ".codex/hooks.json".source = config.lib.file.mkOutOfStoreSymlink "/Users/${config.home.username}/.config/agents/hooks.json";
+  ".codex/rules".source = config.lib.file.mkOutOfStoreSymlink "/Users/${sysInfo.user}/.config/agents/rules";
 
   ".config/qman/qman.conf".text = ''
     [misc]
