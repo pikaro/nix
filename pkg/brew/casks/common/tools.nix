@@ -1,4 +1,5 @@
 [
   "hammerspoon"
   "copilot-cli"
+  "sbx"
 ]
