@@ -9,11 +9,13 @@ with pkgs; [
   imagemagick
   jankyborders
   jd-diff-patch
+  jless
   marp-cli
   mcp-proxy
   # md2pdf
   mermaid-cli
   nix-tree
+  pandoc
   plantuml
   rlwrap
   sketchybar
