@@ -150,6 +150,7 @@
     BUILDX_EXPERIMENTAL = "1";
     TG_LOG_SHOW_ABS_PATHS = "1";
     VAULT_ADDR = "https://vault.d-reis.com";
+    LISTMAX = "0";
   };
 
   fonts.packages = with pkgs; [
