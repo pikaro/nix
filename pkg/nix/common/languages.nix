@@ -35,12 +35,12 @@ with pkgs; [
           mdformat-mkdocs
           mdformat-frontmatter
           pip
+          pydantic
+          pydantic-settings
           pyobjc-framework-Cocoa
           tabulate
           tkinter
-          pygame
           numpy
-          pygame-gui
         ]
     )
   )
