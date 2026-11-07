@@ -15,8 +15,8 @@
       url = "github:pikaro/nvim/master";
       flake = false;
     };
-    codex = {
-      url = "github:pikaro/codex/master";
+    agents = {
+      url = "github:pikaro/agents/master";
       flake = false;
     };
     sketchybar = {
