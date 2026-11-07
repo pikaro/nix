@@ -83,24 +83,22 @@ in {
       autostash = true;
     };
   };
-  ignores =
-    [
-      "*~"
-      "*.swp"
-      "*.pyc"
-      "*.pyo"
-      "*.pyd"
-      "*.o"
-      "*.out"
-      "*.log"
-      "*.tmp"
-      "*.bak"
-      ".DS_Store"
-    ]
-    ++ lib.optionals isWork [
-      "CLAUDE.local.md"
-      ".agents"
-    ];
+  ignores = [
+    "*~"
+    "*.swp"
+    "*.pyc"
+    "*.pyo"
+    "*.pyd"
+    "*.o"
+    "*.out"
+    "*.log"
+    "*.tmp"
+    "*.bak"
+    ".DS_Store"
+    "AGENTS.override.md"
+    "CLAUDE.local.md"
+    ".agents"
+  ];
   lfs = {
     enable = true;
   };
