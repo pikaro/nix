@@ -7,7 +7,6 @@ with pkgs; [
   fd
   graphviz
   imagemagick
-  jankyborders
   jd-diff-patch
   jless
   marp-cli
